@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AJ Translations - Traduction, interprétation et services linguistiques.">
+    <title>AJ Translations | Traduction & services linguistiques</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #26313d;
+            background: white;
+            line-height: 1.7;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 7%;
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #071b35;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #071b35;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c7953f;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 70px 10%;
+            background: #f8f7f4;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .small-title {
+            color: #c7953f;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #071b35;
+            font-family: Georgia, serif;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #c7953f;
+        }
+
+        .intro {
+            color: #687482;
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-logo img {
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 23px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-primary {
+            color: white;
+            background: #071b35;
+        }
+
+        .button-primary:hover {
+            background: #102c4e;
+        }
+
+        .button-secondary {
+            color: #071b35;
+            border: 1px solid #071b35;
+        }
+
+        section {
+            padding: 90px 10%;
+        }
+
+        h2 {
+            color: #071b35;
+            font-family: Georgia, serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 70px;
+        }
+
+        .about p {
+            color: #687482;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        .services {
+            background: #f8f7f4;
+        }
+
+        .section-intro {
+            color: #687482;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            padding: 35px;
+            border-top: 4px solid #c7953f;
+            box-shadow: 0 10px 25px rgba(7, 27, 53, 0.07);
+        }
+
+        .service-number {
+            color: #c7953f;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            color: #071b35;
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .service p {
+            color: #687482;
+        }
+
+        .contact {
+            background: #071b35;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ccd4de;
+        }
+
+        .contact .button-primary {
+            background: #c7953f;
+            color: #071b35;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #041326;
+            color: #aeb8c4;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-logo {
+                order: -1;
+            }
+
+            .hero-logo img {
+                width: 230px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="#accueil" class="logo">
+        <img src="AJlogo.png" alt="Logo AJ Translations">
+        <span>AJ TRANSLATIONS</span>
+    </a>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="accueil" class="hero">
+    <div class="hero-text">
+        <p class="small-title">AJ TRANSLATIONS</p>
+
+        <h1>
+            Vos mots.<br>
+            <span>Notre expertise.</span>
+        </h1>
+
+        <p class="intro">
+            Des services linguistiques professionnels pour faciliter
+            vos échanges, vos projets et vos déplacements.
+        </p>
+
+        <a href="#services" class="button button-primary">
+            Découvrir nos services
+        </a>
+
+        <a href="#contact" class="button button-secondary">
+            Nous contacter
+        </a>
+    </div>
+
+    <div class="hero-logo">
+        <img src="AJlogo.png" alt="AJ Translations">
+    </div>
+</section>
+
+
+<section id="apropos" class="about">
+
+    <div>
+        <p class="small-title">À PROPOS</p>
+        <h2>AJ Translations</h2>
+    </div>
+
+    <div>
+        <p>
+            AJ Translations propose des services linguistiques destinés
+            à accompagner particuliers, professionnels et visiteurs.
+        </p>
+
+        <p>
+            Notre objectif est de faciliter la communication et de
+            permettre à chacun de comprendre et d'être compris,
+            avec un service sérieux et adapté à chaque besoin.
+        </p>
+    </div>
+
+</section>
+
+
+<section id="services" class="services">
+
+    <p class="small-title">NOS SERVICES</p>
+
+    <h2>Des solutions linguistiques adaptées</h2>
+
+    <p class="section-intro">
+        Découvrez les services proposés par AJ Translations.
+    </p>
+
+    <div class="service-grid">
+
+        <div class="service">
+            <div class="service-number">01</div>
+            <h3>Traduction</h3>
+            <p>
+                Traduction de contenus et de documents afin de
+                transmettre votre message clairement dans une autre langue.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-number">02</div>
+            <h3>Interprétation</h3>
+            <p>
+                Accompagnement linguistique pour faciliter les échanges
+                et la communication entre personnes parlant des langues différentes.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-number">03</div>
+            <h3>Traduction de documents</h3>
+            <p>
+                Traduction de documents professionnels, administratifs
+                ou personnels selon vos besoins.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-number">04</div>
+            <h3>Guide touristique</h3>
+            <p>
+                Accompagnement et assistance linguistique pour découvrir
+                une destination et faciliter les échanges avec les visiteurs.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+    <p class="small-title">CONTACT</p>
+
+    <h2>Un projet ou une question ?</h2>
+
+    <p>
+        Contactez AJ Translations pour discuter de votre besoin linguistique.
+    </p>
+
+    <a href="mailto:VOTRE_EMAIL@example.com" class="button button-primary">
+        Nous contacter
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 AJ Translations — Tous droits réservés.
+</footer>
+
+</body>
+</html>
