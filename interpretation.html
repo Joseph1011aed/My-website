@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interprétation | AJ Translations</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26313d;
+    background: white;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 7%;
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #071b35;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #071b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c7953f;
+}
+
+.hero {
+    background: #f8f7f4;
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.small-title {
+    color: #c7953f;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #071b35;
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.intro {
+    color: #687482;
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    color: #071b35;
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.language {
+    background: white;
+    padding: 30px;
+    border-top: 4px solid #c7953f;
+    box-shadow: 0 10px 25px rgba(7, 27, 53, 0.07);
+}
+
+.language h3 {
+    color: #071b35;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.language p {
+    color: #687482;
+}
+
+.contact {
+    background: #071b35;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 23px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background: #c7953f;
+    color: #071b35;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #041326;
+    color: #aeb8c4;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .languages {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+    <img src="AJlogo.png" alt="Logo AJ Translations">
+    <span>AJ TRANSLATIONS</span>
+</a>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="index.html#apropos">À propos</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<p class="small-title">AJ TRANSLATIONS</p>
+
+<h1>Interprétation</h1>
+
+<p class="intro">
+Un service d'interprétation permettant de faciliter
+la communication entre personnes parlant différentes langues.
+</p>
+
+</section>
+
+
+<section>
+
+<p class="small-title">LANGUES</p>
+
+<h2>Mes langues d'interprétation</h2>
+
+<p>
+Je propose des services d'interprétation dans les langues suivantes :
+</p>
+
+
+<div class="languages">
+
+<div class="language">
+
+<h3>🇫🇷 Français ↔ 🇬🇧 Anglais</h3>
+
+<p>
+Interprétation du français vers l'anglais
+et de l'anglais vers le français.
+</p>
+
+</div>
+
+
+<div class="language">
+
+<h3>🇫🇷 Français ↔ 🇩🇪 Allemand</h3>
+
+<p>
+Interprétation du français vers l'allemand
+et de l'allemand vers le français.
+</p>
+
+</div>
+
+
+<div class="language">
+
+<h3>🇫🇷 Français ↔ 🇸🇦 Arabe</h3>
+
+<p>
+Interprétation du français vers l'arabe
+et de l'arabe vers le français.
+</p>
+
+</div>
+
+
+<div class="language">
+
+<h3>🇬🇧 Anglais ↔ 🇩🇪 Allemand</h3>
+
+<p>
+Interprétation de l'anglais vers l'allemand
+et de l'allemand vers l'anglais.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact">
+
+<h2>Besoin d'une interprétation ?</h2>
+
+<p>
+N'hésitez pas à me contacter pour discuter
+de votre besoin linguistique.
+</p>
+
+<a href="index.html#contact" class="button">
+Me contacter
+</a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+© 2026 AJ Translations — Tous droits réservés.
+
+</footer>
+
+</body>
+</html>
