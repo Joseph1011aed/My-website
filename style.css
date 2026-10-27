@@ -1,0 +1,13 @@
+/* Design simple : fond violet et écriture argent clair */
+:root{--violet:#28163d;--violet2:#3b2454;--violet3:#563b70;--argent:#f0eff6;--argent2:#ddd7e8;--texte:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.65;background:var(--violet);color:var(--texte)}a{color:var(--argent)}a:hover{color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px clamp(18px,5vw,64px);background:#1d102d;border-bottom:1px solid #9a8bad;flex-wrap:wrap}
+.logo{font-size:1.15rem;font-weight:bold;text-decoration:none;color:var(--argent)}.logo span{display:block;font-size:.8rem;font-weight:normal;letter-spacing:.03em}
+nav{display:flex;gap:5px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--argent);padding:7px 11px;border-radius:5px}nav a:hover,nav a.active{background:var(--violet3);color:#fff}
+.hero{display:block;max-width:1100px;margin:0 auto;padding:50px clamp(18px,7vw,88px);background:var(--violet2)}.hero h1,.page-hero h1{color:var(--argent);font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.12;margin:8px 0 18px}.hero img,.split img{width:100%;display:block;object-fit:cover;border-radius:9px}.hero img{max-height:380px}.eyebrow{color:var(--argent);text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:bold}
+.button{display:inline-block;margin-top:12px;padding:10px 17px;background:var(--argent);color:var(--violet);border-radius:5px;text-decoration:none;font-weight:bold}.button:hover{background:#fff;color:var(--violet)}
+.section{padding:40px clamp(18px,7vw,88px)}h2,h3{color:var(--argent);line-height:1.25}h2{font-size:clamp(1.4rem,2.7vw,2rem)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:22px}.card{background:var(--violet2);border:1px solid #827096;border-radius:9px;padding:19px}.card h3{margin-top:0}.card h2{font-size:1.3rem}
+.page-hero{padding:44px clamp(18px,7vw,88px);background:var(--violet2)}.page-hero h1{font-size:clamp(2rem,4vw,3rem)}.split{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.split img{max-height:360px}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+footer{padding:18px;text-align:center;background:#1d102d;border-top:1px solid #9a8bad;color:var(--argent2);font-size:.88rem}
+@media(max-width:760px){.hero,.split,.contact-layout,.cards{grid-template-columns:1fr}header{align-items:flex-start}nav{width:100%}}
