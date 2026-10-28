@@ -1,43 +1,105 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AED'S Translation Services and More</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28113f">
+  <meta name="description" content="AED’S Translation Services and More : traduction, interprétation franco-allemande et visites guidées à Quimper.">
+  <title>AED’S Translation Services and More | Accueil</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>AED'S Translation Services and More</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
+<body class="homepage">
+  <header class="home-header">
+    <a class="logo" href="index.html" aria-label="AED’S, accueil">AED’S <span>Translation Services and More</span></a>
+    <nav aria-label="Navigation principale">
+      <a class="active" href="index.html">Accueil</a>
       <a href="about.html">À propos</a>
-      <a href="services.html">Services</a>
+      <a href="services.html">Prestations</a>
+      <a href="services.html#interpretation">Interprétation</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="language-flags" aria-label="Langues proposées">
+      <span title="Français" aria-label="Français">🇫🇷</span>
+      <span title="Allemand" aria-label="Allemand">🇩🇪</span>
+    </div>
   </header>
 
   <main>
-    <h2>Les langues créent des liens.</h2>
-    <p>
-      Je suis Joseph, étudiant à l'UBO à Brest en master de traduction
-      et d'interprétation.
-    </p>
-    <p>
-      Je développe mon activité en parallèle de mes études, en proposant
-      des services de traduction de sous-titres, d'interprétation
-      franco-allemande et de guide touristique à Quimper.
-    </p>
-    <p>
-      Ayant grandi entre les cultures française et allemande, je maîtrise
-      les deux langues au niveau maternel.
-    </p>
-    <a href="services.html">Découvrir mes services</a>
-  </main>
+    <section class="home-hero">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-globe" aria-hidden="true">
+        <div class="globe-grid"></div>
+        <svg viewBox="0 0 320 320" role="presentation" aria-hidden="true">
+          <defs>
+            <clipPath id="globe-clip"><circle cx="160" cy="160" r="154"/></clipPath>
+            <radialGradient id="globe-shade" cx="35%" cy="25%" r="80%">
+              <stop offset="0%" stop-color="#d9a7ff"/>
+              <stop offset="52%" stop-color="#8745bb"/>
+              <stop offset="100%" stop-color="#32104f"/>
+            </radialGradient>
+          </defs>
+          <circle cx="160" cy="160" r="154" fill="url(#globe-shade)" stroke="#cfa8ed" stroke-width="2"/>
+          <g clip-path="url(#globe-clip)" fill="#4b206f" opacity=".9">
+            <path d="M65 54l20-13 20 5 10 17-13 10-4 18-19 9-7 23-18 4-11-19 8-22-8-14z"/>
+            <path d="M115 104l24-12 22 9 10 24-10 16-2 29-16 25-7 32-16 18-10-20 5-25-12-25 5-25-12-21z"/>
+            <path d="M160 40l19-14 24 8 7 16 21 2 13 17-14 12-22-8-12 12-17-7-6-18-16 1z"/>
+            <path d="M205 100l17-17 28 3 12 17 21 8-4 21-20 9-7 20-18 8-5 25-16 9-11-19 6-21-13-17 4-21-13-11z"/>
+            <path d="M238 219l19-9 24 12 3 22-20 15-25-8-8-16z"/>
+            <path d="M47 180l17-12 18 11 3 21-16 13-17-10z"/>
+          </g>
+          <g fill="none" stroke="#e8cfff" stroke-width="1.2" opacity=".45">
+            <ellipse cx="160" cy="160" rx="70" ry="154"/>
+            <ellipse cx="160" cy="160" rx="126" ry="154"/>
+            <ellipse cx="160" cy="160" rx="154" ry="54"/>
+            <ellipse cx="160" cy="160" rx="154" ry="105"/>
+            <path d="M6 160h308M160 6v308"/>
+          </g>
+        </svg>
+      </div>
 
-  <footer>
-    <p>© AED'S Translation Services and More</p>
-  </footer>
+      <div class="hero-brand">
+        <p class="eyebrow">Français <span>↔</span> Deutsch</p>
+        <h1>AED’S</h1>
+        <p class="hero-subtitle">Translation Services and More</p>
+        <p class="hero-tagline">Des mots qui connectent les personnes, les cultures et les opportunités.</p>
+        <span class="hero-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="home-services" aria-label="Nos services">
+        <a class="home-service" href="services.html">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M17 8h23l9 9v39H17z"/><path d="M40 8v10h9M23 27h20M23 35h20M23 43h15"/></svg>
+          </span>
+          <h2>Traduction</h2>
+          <p>Des traductions précises<br>et de qualité</p>
+          <span class="language-pair">français ↔ allemand</span>
+        </a>
+        <a class="home-service" href="services.html#interpretation">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M9 28c0-12 10-20 23-20s23 8 23 20-10 20-23 20c-4 0-8-1-11-2L9 53l3-12c-2-4-3-8-3-13z"/><path d="M22 24h20M22 32h15"/></svg>
+          </span>
+          <h2>Interprétation</h2>
+          <p>Une communication claire<br>en toute situation</p>
+          <span class="language-pair">français ↔ allemand</span>
+        </a>
+        <a class="home-service" href="services.html">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M8 53h48M13 53V31l8-8 8 8v22M29 53V18l8-10 8 10v35M45 53V29l7-7 5 7v24"/><path d="M17 36h8M33 25h8M33 33h8M3 59h58M7 46l7-4 8 4 8-3 9 3 8-4 10 4"/></svg>
+          </span>
+          <h2>Guide touristique</h2>
+          <p>Découvrez Quimper<br>et la Bretagne</p>
+          <span class="language-pair">dans les deux langues</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section home-intro">
+      <h2>Bienvenue chez AED’S</h2>
+      <p>Je suis Joseph, étudiant à l’UBO à Brest en master de traduction et d’interprétation. Ayant grandi entre les cultures française et allemande, je propose des services de traduction de sous-titres, d’interprétation franco-allemande et des visites guidées à Quimper.</p>
+      <a class="button" href="services.html">Découvrir mes prestations</a>
+    </section>
+  </main>
+  <footer>© 2026 AED’S Translation Services and More · Joseph</footer>
 </body>
 </html>
